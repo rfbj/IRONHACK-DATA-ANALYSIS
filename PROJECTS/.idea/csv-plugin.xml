@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\Data Cleaning - Shark Attack\.ipynb_checkpoints\gun_da_lua.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Data Cleaning - Shark Attack\data\attacks.csv">
           <value>
             <Attribute>
