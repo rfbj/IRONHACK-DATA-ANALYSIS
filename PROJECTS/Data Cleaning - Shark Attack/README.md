@@ -1,6 +1,5 @@
-IRONHACK - DATA ANALYSIS FT - JAN22
-
-PROJECT: Data cleaning and manipulation - Shark Attack
+# IRONHACK - DATA ANALYSIS FT - JAN22
+# PROJECT: Data cleaning and manipulation - Shark Attack
 
 Our goal with this data cleaning and manipulation project is to answer a few questions from a business perspective, assuming our company has not been established yet.
 
