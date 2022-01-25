@@ -1,8 +1,7 @@
-IRONHACK - DATA ANALYSIS FT - JAN22
+# IRONHACK - DATA ANALYSIS FT - JAN22
+# PROJECT: Data cleaning and manipulation - Shark Attack
 
-PROJECT: Data cleaning and manipulation - Shark Attack
-
-Our goal with this data cleaning and manipulation project a few questions from a business perspective, assuming our company has not been established yet.
+Our goal with this data cleaning and manipulation project is to answer a few questions from a business perspective, assuming our company has not been established yet.
 
 Therefore, at first, we need to identify on what two or three countries we have the highest shark attack occurrences and, moreover, 
 if they were accidental (unprovoked) or provoked.
