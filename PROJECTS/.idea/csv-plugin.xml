@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Data Cleaning - Shark Attack\data\MoonPhases.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Data Cleaning - Shark Attack\data\attacks.csv">
           <value>
             <Attribute>
