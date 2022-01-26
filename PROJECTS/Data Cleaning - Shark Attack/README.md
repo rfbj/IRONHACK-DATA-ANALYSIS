@@ -1,6 +1,8 @@
 # IRONHACK - DATA ANALYSIS FT - JAN22
 # PROJECT: Data cleaning and manipulation - Shark Attack
 
+This data treatment project is part of Ironhack's Data Analysis graduation process.  
+
 Our goal with this data cleaning and manipulation project is to answer a few questions from a business perspective, assuming our company has not been established yet.
 
 Therefore, at first, we need to identify on what two or three countries we have the highest shark attack occurrences and, moreover, 
@@ -32,3 +34,18 @@ Once we have answered the questions above we should be ready to decide:
 
 Considering that we'd like to enrich this project, as for our future plans we'd like to deepen our research 
 and check how does shark attacks relate to moon phases? This currently is our work in progress.
+
+## How did we treat our data? (Tech/Libs used)
+
+
+---
+
+Data treatment in this project has mostly been performed with PANDAS library and Python.
+
+
+## Our conclusions
+
+---
+
+Most shark attacks took place in USA and were unprovoked, which leads to the conclusion that we should install our company's headquarters in United States. Surprisingly, more than 70% of incidents were unprovoked, what shows us that warning and educating bathers ir more important than selling any kind of product. Therefore, our company should aim on providing services instead of selling any sort of anti-shark product. Such services should be offered to local authorities, which should be our target audience
+
