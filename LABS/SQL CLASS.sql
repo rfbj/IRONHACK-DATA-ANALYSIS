@@ -58,7 +58,7 @@ SELECT
 *,
 concat('19', left(date,2))
 FROM account;
-*/
+
 SELECT `apple_table`.`id`,
     `apple_table`.`track_name`,
     `apple_table`.`size_bytes`,
@@ -87,4 +87,9 @@ FROM payment
 group by customer_id;
 
 
+*/
+
+SELECT *
+FROM client
+LEFT JOIN district_id ON district_id.a1 = client.district_id
 

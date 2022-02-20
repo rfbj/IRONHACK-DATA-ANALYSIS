@@ -1,0 +1,23 @@
+
+*.zip
+*.csv
+LABS/your_key.txt
+MATERIAL AULA JUPYTER NB/pwd.py
+LABS/.idea/inspectionProfiles/profiles_settings.xml
+LABS/.ipynb_checkpoints/asset-v1_IRONHACK+DAFT+202201_3_SAO+type@asset+block@etl-coronavirus-before-checkpoint.ipynb
+LABS/.ipynb_checkpoints/M02-L04-matplotlib_and_seaborn-checkpoint.ipynb
+LABS/.ipynb_checkpoints/M02-L05-introduction_to_API-checkpoint.ipynb
+LABS/.ipynb_checkpoints/M02-L06-API_spotify-checkpoint.ipynb
+LABS/.ipynb_checkpoints/M02-L07-webscraping-checkpoint.ipynb
+LABS/.ipynb_checkpoints/M02-L08-parallelization-checkpoint.ipynb
+LABS/.ipynb_checkpoints/M02-L10-statistics_visualization-checkpoint.ipynb
+LABS/.ipynb_checkpoints/M02-L11-linear_regression-checkpoint.ipynb
+MATERIAL AULA JUPYTER NB/.ipynb_checkpoints/asset-v1_IRONHACK+DAFT+202201_3_SAO+type@asset+block@dynamic-selenium-checkpoint.ipynb
+MATERIAL AULA JUPYTER NB/asset-v1_IRONHACK+DAFT+202201_3_SAO+type@asset+block@dynamic-selenium.ipynb
+LABS/.ipynb_checkpoints/Lab-selenium-checkpoint.ipynb
+LABS/asset-v1_IRONHACK+DAFT+202201_3_SAO+type@asset+block@etl-coronavirus-before.ipynb
+LABS/publications_database.sql
+LABS/data/publications.sql
+LABS/data/publications_database.sql
+LABS/data_visualization_with_tableau.md
+LABS/generic_pipeline/
