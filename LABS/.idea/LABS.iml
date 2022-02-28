@@ -4,6 +4,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Auxilio" />
+    <orderEntry type="module" module-name="MATERIAL AULA JUPYTER NB" />
+    <orderEntry type="module" module-name="Projetos-Pessoais" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />

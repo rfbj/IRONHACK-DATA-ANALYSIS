@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PROJECTS/Auxilio/.idea/Auxilio.iml" filepath="$PROJECT_DIR$/../PROJECTS/Auxilio/.idea/Auxilio.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/LABS.iml" filepath="$PROJECT_DIR$/.idea/LABS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MATERIAL AULA JUPYTER NB/.idea/MATERIAL AULA JUPYTER NB.iml" filepath="$PROJECT_DIR$/../MATERIAL AULA JUPYTER NB/.idea/MATERIAL AULA JUPYTER NB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Projetos-Pessoais/.idea/Projetos-Pessoais.iml" filepath="$PROJECT_DIR$/../Projetos-Pessoais/.idea/Projetos-Pessoais.iml" />
     </modules>
   </component>
 </project>

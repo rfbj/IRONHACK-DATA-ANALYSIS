@@ -1,16 +1,12 @@
 ### IMPORT LIBRARIES ###
 
 import time
-import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.select import Select
 import os
-from bs4 import BeautifulSoup
-import requests
-import re
 import zipfile
-from tqdm import tqdm
+
 
 
 ### PARAMS ###
@@ -141,36 +137,3 @@ if need_del_z:
 else:
     print("Usuário optou por não deletar os arquivos")
 
-
-### INICIO TRATAMENTO DOS DADOS ###
-csvs_in_dir = os.listdir(f"{files_path}\\")
-csv_files_in_dir = [zp if zp.endswith("AuxilioEmergencial.csv") else "" for zp in csvs_in_dir]
-csv_files_list = [file for file in csv_files_in_dir if file != ""]
-print("Foram encontrados os seguintes arquivos csv de Auxilio Emergencial:")
-for csv in csv_files_list:
-    print(csv)
-
-def ask_concat_csvs():
-    question4 = input(f"Deseja concatenar os {len(csv_files_list)} arquivos em um único arquivo?(S/N)")
-    if question4 == "S" or question4 == "s" or question4 == "Y" or question4 == "y":
-        return True
-    elif question4 == "N" or question4 == "n":
-        return False
-    else:
-        ask_concat_csvs()
-
-plz_concat = ask_concat_csvs()
-
-if plz_concat:
-    print(f"Unindo arquivos csv")
-    #df_ae_list = [pd.read_csv(f"{files_path}\\{csv}", encoding="ANSI", sep=";")for csv in csv_files_list]
-    pd.concat([pd.read_csv(f"{files_path}\\{csv}", encoding="ANSI", sep=";")for csv in tqdm(csv_files_list)])
-    print("União concluída")
-else:
-    print("Usuário optou por não concatenar os arquivos.")
-
-
-df_ae.to_csv(f"{files_path}\\AuxilioEmergencial.csv")
-
-# https://brasil.io/dataset/genero-nomes/nomes/
-# https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?=&t=resultados

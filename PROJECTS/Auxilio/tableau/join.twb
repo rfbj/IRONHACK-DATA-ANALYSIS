@@ -1,0 +1,682 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ae_20_21_clean+' inline='true' name='federated.11do5an187f2511g9teaf0q3zcof' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ae_20_21_clean' name='textscan.0l4h09z192ii6a1fyq4gd1m5c3i9'>
+            <connection class='textscan' directory='C:/Ironhack/DATA_CLASSES/IRONHACK-DATA-ANALYSIS/PROJECTS/Auxilio/data' filename='ae_20_21_clean.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='regioes_brasil' name='textscan.06k1d1v0lfpus8101v4jy1qmstmf'>
+            <connection class='textscan' directory='C:/Ironhack/DATA_CLASSES/IRONHACK-DATA-ANALYSIS/PROJECTS/Auxilio/data/extra' filename='regioes_brasil.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[cod_mun_ibge_pop.csv1].[UF]' />
+              <expression op='[regioes_brasil.csv].[UF]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[ae_20_21_clean.csv].[cod_mun_ibge]' />
+                <expression op='[cod_mun_ibge_pop.csv1].[cod_mun_ibge]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0l4h09z192ii6a1fyq4gd1m5c3i9' name='ae_20_21_clean.csv' table='[ae_20_21_clean#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='pt_BR'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='date' date-parse-format='yyyyMM' name='disponibilizacao' ordinal='1' />
+                <column datatype='string' name='cod_mun_ibge' ordinal='2' />
+                <column datatype='integer' name='valor' ordinal='3' />
+              </columns>
+            </relation>
+            <relation connection='textscan.0l4h09z192ii6a1fyq4gd1m5c3i9' name='cod_mun_ibge_pop.csv1' table='[cod_mun_ibge_pop#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=','>
+                <column datatype='string' name='UF' ordinal='0' />
+                <column datatype='string' name='NOME DO MUNICÍPIO' ordinal='1' />
+                <column datatype='integer' name='POPULAÇÃO ESTIMADA ' ordinal='2' />
+                <column datatype='string' name='cod_mun_ibge' ordinal='3' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.06k1d1v0lfpus8101v4jy1qmstmf' name='regioes_brasil.csv' table='[regioes_brasil#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+              <column datatype='string' name='ESTADO' ordinal='0' />
+              <column datatype='string' name='REGIAO' ordinal='1' />
+              <column datatype='string' name='UF' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[cod_mun_ibge_pop.csv1].[UF]' />
+              <expression op='[regioes_brasil.csv].[UF]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[ae_20_21_clean.csv].[cod_mun_ibge]' />
+                <expression op='[cod_mun_ibge_pop.csv1].[cod_mun_ibge]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0l4h09z192ii6a1fyq4gd1m5c3i9' name='ae_20_21_clean.csv' table='[ae_20_21_clean#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='pt_BR'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='date' date-parse-format='yyyyMM' name='disponibilizacao' ordinal='1' />
+                <column datatype='string' name='cod_mun_ibge' ordinal='2' />
+                <column datatype='integer' name='valor' ordinal='3' />
+              </columns>
+            </relation>
+            <relation connection='textscan.0l4h09z192ii6a1fyq4gd1m5c3i9' name='cod_mun_ibge_pop.csv1' table='[cod_mun_ibge_pop#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=','>
+                <column datatype='string' name='UF' ordinal='0' />
+                <column datatype='string' name='NOME DO MUNICÍPIO' ordinal='1' />
+                <column datatype='integer' name='POPULAÇÃO ESTIMADA ' ordinal='2' />
+                <column datatype='string' name='cod_mun_ibge' ordinal='3' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.06k1d1v0lfpus8101v4jy1qmstmf' name='regioes_brasil.csv' table='[regioes_brasil#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+              <column datatype='string' name='ESTADO' ordinal='0' />
+              <column datatype='string' name='REGIAO' ordinal='1' />
+              <column datatype='string' name='UF' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[ESTADO]' value='[regioes_brasil.csv].[ESTADO]' />
+          <map key='[F1]' value='[ae_20_21_clean.csv].[F1]' />
+          <map key='[NOME DO MUNICÍPIO (cod_mun_ibge_pop.csv1)]' value='[cod_mun_ibge_pop.csv1].[NOME DO MUNICÍPIO]' />
+          <map key='[POPULAÇÃO ESTIMADA  (cod_mun_ibge_pop.csv1)]' value='[cod_mun_ibge_pop.csv1].[POPULAÇÃO ESTIMADA ]' />
+          <map key='[REGIAO]' value='[regioes_brasil.csv].[REGIAO]' />
+          <map key='[UF (cod_mun_ibge_pop.csv1)]' value='[cod_mun_ibge_pop.csv1].[UF]' />
+          <map key='[UF]' value='[regioes_brasil.csv].[UF]' />
+          <map key='[cod_mun_ibge (cod_mun_ibge_pop.csv1)]' value='[cod_mun_ibge_pop.csv1].[cod_mun_ibge]' />
+          <map key='[cod_mun_ibge]' value='[ae_20_21_clean.csv].[cod_mun_ibge]' />
+          <map key='[disponibilizacao]' value='[ae_20_21_clean.csv].[disponibilizacao]' />
+          <map key='[valor]' value='[ae_20_21_clean.csv].[valor]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ae_20_21_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cod_mun_ibge_pop.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[regioes_brasil.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[ae_20_21_clean.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>disponibilizacao</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[disponibilizacao]</local-name>
+            <parent-name>[ae_20_21_clean.csv]</parent-name>
+            <remote-alias>disponibilizacao</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cod_mun_ibge</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cod_mun_ibge]</local-name>
+            <parent-name>[ae_20_21_clean.csv]</parent-name>
+            <remote-alias>cod_mun_ibge</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>valor</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[valor]</local-name>
+            <parent-name>[ae_20_21_clean.csv]</parent-name>
+            <remote-alias>valor</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UF</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UF (cod_mun_ibge_pop.csv1)]</local-name>
+            <parent-name>[cod_mun_ibge_pop.csv1]</parent-name>
+            <remote-alias>UF</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOME DO MUNICÍPIO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NOME DO MUNICÍPIO (cod_mun_ibge_pop.csv1)]</local-name>
+            <parent-name>[cod_mun_ibge_pop.csv1]</parent-name>
+            <remote-alias>NOME DO MUNICÍPIO</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPULAÇÃO ESTIMADA </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[POPULAÇÃO ESTIMADA  (cod_mun_ibge_pop.csv1)]</local-name>
+            <parent-name>[cod_mun_ibge_pop.csv1]</parent-name>
+            <remote-alias>POPULAÇÃO ESTIMADA </remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cod_mun_ibge</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cod_mun_ibge (cod_mun_ibge_pop.csv1)]</local-name>
+            <parent-name>[cod_mun_ibge_pop.csv1]</parent-name>
+            <remote-alias>cod_mun_ibge</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ESTADO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ESTADO]</local-name>
+            <parent-name>[regioes_brasil.csv]</parent-name>
+            <remote-alias>ESTADO</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGIAO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[REGIAO]</local-name>
+            <parent-name>[regioes_brasil.csv]</parent-name>
+            <remote-alias>REGIAO</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UF</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UF]</local-name>
+            <parent-name>[regioes_brasil.csv]</parent-name>
+            <remote-alias>UF</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Estado' datatype='string' name='[ESTADO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='NOME DO MUNICÍPIO (cod mun ibge pop.csv1)' datatype='string' name='[NOME DO MUNICÍPIO (cod_mun_ibge_pop.csv1)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='POPULAÇÃO ESTIMADA  (cod mun ibge pop.csv1)' datatype='integer' name='[POPULAÇÃO ESTIMADA  (cod_mun_ibge_pop.csv1)]' role='measure' type='quantitative' />
+      <column aggregate-role-from='[UF]' caption='Regiao' datatype='string' name='[REGIAO]' role='dimension' type='nominal' />
+      <column caption='UF (cod mun ibge pop.csv1)' datatype='string' name='[UF (cod_mun_ibge_pop.csv1)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[UF]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ae_20_21_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025]' role='measure' type='quantitative' />
+      <column caption='Cod Mun Ibge (Cod Mun Ibge Pop.Csv1)' datatype='string' name='[cod_mun_ibge (cod_mun_ibge_pop.csv1)]' role='dimension' type='nominal' />
+      <column caption='Disponibilizacao' datatype='date' name='[disponibilizacao]' role='dimension' type='quantitative' />
+      <column caption='Valor' datatype='integer' name='[valor]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='Regiao, UF'>
+          <field>[REGIAO]</field>
+          <field>[UF]</field>
+        </drill-path>
+        <drill-path name='UF (cod mun ibge pop.csv1), NOME DO MUNICÍPIO (cod mun ibge pop.csv1)'>
+          <field>[UF (cod_mun_ibge_pop.csv1)]</field>
+          <field>[NOME DO MUNICÍPIO (cod_mun_ibge_pop.csv1)]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ae_20_21_clean.csv' id='ae_20_21_clean.csv_2C8033FF5FE045618543D02B9C001025'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[cod_mun_ibge_pop.csv1].[UF]' />
+                    <expression op='[regioes_brasil.csv].[UF]' />
+                  </expression>
+                </clause>
+                <relation join='inner' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[ae_20_21_clean.csv].[cod_mun_ibge]' />
+                      <expression op='[cod_mun_ibge_pop.csv1].[cod_mun_ibge]' />
+                    </expression>
+                  </clause>
+                  <relation connection='textscan.0l4h09z192ii6a1fyq4gd1m5c3i9' name='ae_20_21_clean.csv' table='[ae_20_21_clean#csv]' type='table'>
+                    <columns character-set='UTF-8' header='yes' locale='pt_BR'>
+                      <column datatype='integer' name='F1' ordinal='0' />
+                      <column datatype='date' date-parse-format='yyyyMM' name='disponibilizacao' ordinal='1' />
+                      <column datatype='string' name='cod_mun_ibge' ordinal='2' />
+                      <column datatype='integer' name='valor' ordinal='3' />
+                    </columns>
+                  </relation>
+                  <relation connection='textscan.0l4h09z192ii6a1fyq4gd1m5c3i9' name='cod_mun_ibge_pop.csv1' table='[cod_mun_ibge_pop#csv]' type='table'>
+                    <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=','>
+                      <column datatype='string' name='UF' ordinal='0' />
+                      <column datatype='string' name='NOME DO MUNICÍPIO' ordinal='1' />
+                      <column datatype='integer' name='POPULAÇÃO ESTIMADA ' ordinal='2' />
+                      <column datatype='string' name='cod_mun_ibge' ordinal='3' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation connection='textscan.06k1d1v0lfpus8101v4jy1qmstmf' name='regioes_brasil.csv' table='[regioes_brasil#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+                    <column datatype='string' name='ESTADO' ordinal='0' />
+                    <column datatype='string' name='REGIAO' ordinal='1' />
+                    <column datatype='string' name='UF' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ae_20_21_clean+' name='federated.11do5an187f2511g9teaf0q3zcof' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.11do5an187f2511g9teaf0q3zcof'>
+            <column aggregate-role-from='[UF]' caption='Regiao' datatype='string' name='[REGIAO]' role='dimension' type='nominal' />
+            <column caption='UF (cod mun ibge pop.csv1)' datatype='string' name='[UF (cod_mun_ibge_pop.csv1)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[REGIAO]' derivation='None' name='[none:REGIAO:nk]' pivot='key' type='nominal' />
+            <column-instance column='[UF (cod_mun_ibge_pop.csv1)]' derivation='None' name='[none:UF (cod_mun_ibge_pop.csv1):nk]' pivot='key' type='nominal' />
+            <column-instance column='[valor]' derivation='Sum' name='[sum:valor:qk]' pivot='key' type='quantitative' />
+            <column caption='Valor' datatype='integer' name='[valor]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11do5an187f2511g9teaf0q3zcof].[Longitude (generated)]' field-type='quantitative' max='-207908.60241949186' min='-11252488.698709073' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.11do5an187f2511g9teaf0q3zcof].[Latitude (generated)]' field-type='quantitative' max='1234919.9077418004' min='-4583024.9439642532' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.11do5an187f2511g9teaf0q3zcof].[sum:valor:qk]' />
+              <lod column='[federated.11do5an187f2511g9teaf0q3zcof].[none:UF (cod_mun_ibge_pop.csv1):nk]' />
+              <geometry column='[federated.11do5an187f2511g9teaf0q3zcof].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.11do5an187f2511g9teaf0q3zcof].[Latitude (generated)]</rows>
+        <cols>[federated.11do5an187f2511g9teaf0q3zcof].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.11do5an187f2511g9teaf0q3zcof].[none:REGIAO:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{18C37EE9-99F1-4E3C-A742-EF461987B972}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FFA7AFD1-C2D8-4E78-A00A-12FBC9E162B9}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11do5an187f2511g9teaf0q3zcof].[none:NOME DO MUNICÍPIO (cod_mun_ibge_pop.csv1):nk]</field>
+            <field>[federated.11do5an187f2511g9teaf0q3zcof].[none:REGIAO:nk]</field>
+            <field>[federated.11do5an187f2511g9teaf0q3zcof].[none:UF (cod_mun_ibge_pop.csv1):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5D202046-92B7-4B61-A9DB-0B0E9C941B1F}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6DB2F4BE-53CC-425E-8638-DA0F921689E3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
