@@ -12,7 +12,7 @@
    a.	Encontrar (ou não) paralelo entre os pagamentos do Auxílio Emergencial com a inflação; e,
    b.	Propor hipóteses:
 
-     # i.	Será que o auxílio proporcionou o aumento em algum dos itens que compõe o cálculo dos índices?
+      i.	Será que o auxílio proporcionou o aumento em algum dos itens que compõe o cálculo dos índices?
 
  4.	Aprofundar conhecimento a respeito da apresentação na área de dados:
    a.	Assistir vídeos sobre storytelling para data; e,
