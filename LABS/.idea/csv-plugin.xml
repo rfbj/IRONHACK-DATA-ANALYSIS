@@ -10,7 +10,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="C:\Ironhack\DATA_CLASSES\IRONHACK-DATA-ANALYSIS\PROJECTS\Auxilio\data\cod_mun_float_sem_i.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\patient-admission.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\titanic2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
