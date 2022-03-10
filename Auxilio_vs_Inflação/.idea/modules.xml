@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/OneDrive/Área de Trabalho/Analise de Dados/.idea/Analise de Dados.iml" filepath="$USER_HOME$/OneDrive/Área de Trabalho/Analise de Dados/.idea/Analise de Dados.iml" />
       <module fileurl="file://$PROJECT_DIR$/../PROJECTS/Auxilio/.idea/Auxilio.iml" filepath="$PROJECT_DIR$/../PROJECTS/Auxilio/.idea/Auxilio.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Auxilio_vs_Inflação.iml" filepath="$PROJECT_DIR$/.idea/Auxilio_vs_Inflação.iml" />
       <module fileurl="file://$PROJECT_DIR$/../LABS/.idea/LABS.iml" filepath="$PROJECT_DIR$/../LABS/.idea/LABS.iml" />

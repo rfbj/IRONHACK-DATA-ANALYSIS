@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a083cfa1-bc3a-4c76-9a07-513870737c1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Auxilio_vs_Inflação.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API_Gatherer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp_gathering_ae_inf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mp_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LABS/M03-L06-titanic_exploration.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MATERIAL AULA JUPYTER NB/asset-v1_IRONHACK+DAFT+202103_SAO+type@asset+block@text-classification.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MATERIAL AULA JUPYTER NB/asset-v1_IRONHACK+DAFT+202201_3_SAO+type@asset+block@Pycaret.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MATERIAL AULA JUPYTER NB/asset-v1_IRONHACK+DAFT+202201_3_SAO+type@asset+block@evaluation-metrics.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LABS/.idea/LABS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LABS/.idea/LABS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LABS/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LABS/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LABS/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LABS/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PROJECTS/Auxilio/mp_csvshandling.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PROJECTS/Auxilio/mp_csvshandling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PROJECTS/Auxilio/tableau/projeto_aux_em.twb" beforeDir="false" afterPath="$PROJECT_DIR$/../PROJECTS/Auxilio/tableau/projeto_aux_em.twb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PROJECTS/Auxilio/teste.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../PROJECTS/Auxilio/teste.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Gather.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.Gather.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Auxilio_vs_Inflação.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Auxilio_vs_Inflação.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MATERIAL AULA JUPYTER NB/data" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Área de Trabalho/Analise de Dados" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -76,7 +64,9 @@
       <workItem from="1646395268587" duration="770000" />
       <workItem from="1646396657506" duration="840000" />
       <workItem from="1646398659374" duration="4300000" />
-      <workItem from="1646403027828" duration="1071000" />
+      <workItem from="1646403027828" duration="7012000" />
+      <workItem from="1646430363929" duration="2600000" />
+      <workItem from="1646750721682" duration="626000" />
     </task>
     <servers />
   </component>
